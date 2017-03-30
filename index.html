@@ -17,6 +17,7 @@
   <body class="index">
     <h1>Find A Burger</h1>
 
+<p><small>Select a patty:</small></p>
 <ul class='filters'>
     <li class='filter active' data-filter='All'>
 <a href="#">        &#x1F354;<br>
@@ -60,10 +61,11 @@
 </a>    </li>
 </ul>
 
-<h2>Restaurants</h2>
-
-<p> <label for="near_me_only">Near me only: </label> <input type="checkbox" name="near_me" value="1" class="near-me" /> </p>
 <p id='geolocation-callback'></p>
+<p><small><label for="show_near_me_only">Show near me only: </label></small></p>
+<p><input type="checkbox" name="near_me" value="1" class="near-me" /></p>
+
+<h2>Restaurants</h2>
 
   <div class='restaurant-card' id="annam-restaurant" data-patties="Beef All">
 <a href="/welly-burger/restaurants/annam-restaurant/">  <p class='restaurant-name'>Annam restaurant</p>
