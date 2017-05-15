@@ -1,0 +1,1 @@
+function updateInfoContent(t){var e=$(".restaurant-preview");e.find(".price span").text(t.price.toFixed(2)),e.find(".restaurant-name strong").text(t.restaurant_name),e.find(".burger-name strong").text(t.burger_name),e.find(".description").text(t.description),e.find("a").attr("href","/restaurants/"+t.slug+"/index.html"),e.show()}
