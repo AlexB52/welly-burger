@@ -18,8 +18,8 @@
     <meta property="og:image:width"  content="600"/>
     <meta property="og:image:height" content="315"/>
 
-    <link href="/stylesheets/site-c904ba00.css" rel="stylesheet" />
-    <script src="/javascripts/site-e06944f9.js"></script>
+    <link href="/stylesheets/site-8cf56490.css" rel="stylesheet" />
+    <script src="/javascripts/site-eedd3023.js"></script>
   </head>
 
   <body class="list list_index">
@@ -29,9 +29,7 @@
   <li class="active"><a href="/list/">List</a></li>
 </ul>
     
-<h1>Select a patty</h1>
-
-<p id='filter-selected'><small>Patty selected: <strong>All</strong></small></p>
+<p id='filter-selected'><small>Select a patty: <strong>All</strong></small></p>
 
 <ul class='filters'>
     <li class='filter' data-filter='All'>
@@ -76,12 +74,26 @@
 </a>    </li>
 </ul>
 
-<p><small><label for="show_near_me_only">Show near me only: </label></small></p>
-<p><input type="checkbox" name="near_me" value="1" class="near-me" /></p>
+<div id="location-filters">
+  <div class="location-filter">
+    <p><label for="All">All: </label></p>
+    <p><input type="radio" name="location_filter" class="near-me" value="all" /></p>
+  </div>
+  <div class="location-filter">
+    <p><label for="In 500 m">In 500 m: </label></p>
+    <p><input type="radio" name="location_filter" class="near-me" value="in_range" /></p>
+  </div>
+  <div class="location-filter">
+    <p><label for="5 closest">5 closest: </label></p>
+    <p><input type="radio" name="location_filter" class="near-me" value="closest" /></p>
+  </div>
+</div>
+
+
 <p id='geolocation-callback'></p>
 
 
-<h2>Restaurants</h2>
+<h1>Restaurants</h1>
 
   <div class='restaurant-card' id="annam-restaurant" data-patties="Beef All">
 <a href="#">  <p class='restaurant-name'>Annam restaurant</p>
